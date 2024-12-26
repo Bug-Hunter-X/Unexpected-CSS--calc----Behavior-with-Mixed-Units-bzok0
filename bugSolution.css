@@ -1,0 +1,12 @@
+The `calc()` function in CSS is powerful, but requires careful attention to unit compatibility.  To solve this issue, ensure that the units used within `calc()` expressions are compatible.  For example:
+
+* Avoid adding percentages to percentages or pixels to ems without proper unit conversion.
+* When using percentages and other units, make sure you convert them into compatible units before adding them.
+
+Here's the corrected CSS:
+```css
+.container {
+  width: calc(50% + 10px);
+}
+```
+This corrected code ensures that the calculation is performed with consistent units, resolving the issue of an unexpected width.
